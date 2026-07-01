@@ -1,0 +1,119 @@
+.table-scroll {
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 880px;
+}
+
+.employee-table td:nth-child(3),
+.employee-table th:nth-child(3) {
+  max-width: 190px;
+}
+
+.employee-table td:nth-child(6),
+.employee-table th:nth-child(6) {
+  max-width: 160px;
+}
+
+.employee-table thead th {
+  text-align: left;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface-alt);
+  white-space: nowrap;
+}
+
+.employee-table thead th:first-child {
+  border-top-left-radius: var(--radius-lg);
+}
+
+.employee-table thead th:last-child {
+  border-top-right-radius: var(--radius-lg);
+}
+
+.employee-table-actions-head {
+  text-align: right !important;
+  position: sticky;
+  right: 0;
+  background: var(--color-surface-alt);
+  box-shadow: -8px 0 8px -8px rgba(20, 24, 40, 0.06);
+}
+
+.employee-table tbody td {
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.88rem;
+  color: var(--color-text);
+  vertical-align: middle;
+}
+
+.employee-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.employee-table tbody tr {
+  transition: background-color var(--transition-fast);
+}
+
+.employee-table tbody tr:hover {
+  background: var(--color-surface-alt);
+}
+
+.employee-table-id {
+  font-family: var(--font-mono);
+  color: var(--color-text-faint);
+  font-size: 0.82rem;
+}
+
+.employee-table-name-cell {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.employee-table-name {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.employee-table-muted {
+  color: var(--color-text-muted);
+}
+
+.employee-table-salary {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.employee-table-actions {
+  display: flex;
+  gap: var(--space-2);
+  justify-content: flex-end;
+}
+
+.employee-table-actions-cell {
+  position: sticky;
+  right: 0;
+  background: var(--color-surface);
+  box-shadow: -8px 0 8px -8px rgba(20, 24, 40, 0.06);
+}
+
+.employee-table tbody tr:hover .employee-table-actions-cell {
+  background: var(--color-surface-alt);
+}
+
+.employee-table-delete-btn:hover {
+  background: var(--color-danger-soft) !important;
+  color: var(--color-danger) !important;
+  border-color: var(--color-danger-soft) !important;
+}
