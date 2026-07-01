@@ -56,7 +56,9 @@ http://localhost:8080/api/employees
 
 ## 📷 Screenshots
 
-> Add your application screenshots here.
+
+> <img width="1366" height="768" alt="Screenshot from 2026-06-29 20-21-12" src="https://github.com/user-attachments/assets/95ba5184-98da-4c56-8864-0bdd68a16b6c" />
+
 
 ## 👨‍💻 Author
 
